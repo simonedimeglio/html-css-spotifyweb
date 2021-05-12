@@ -1,0 +1,30 @@
+.app {
+    max-height: 100vh;
+}
+
+.app main {
+    height: calc(100vh - 90px);
+    background-color: orange;
+    
+}
+
+.app footer {
+    height: 90px; 
+    background-color: #282828;
+}
+
+main .sidebar {
+    background-color: rgba(0,0,0,255);
+}
+
+main .content {
+    height: 100%;
+    background-color: rgba(20,25,34,255);
+    overflow-y: scroll;
+}
+
+/* .item {
+    height: 200vh;
+    width: 400px;
+    background-color: red;
+} */
