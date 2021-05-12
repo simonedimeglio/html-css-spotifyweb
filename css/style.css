@@ -25,10 +25,19 @@ main .sidebar {
     position: relative;
 }
 
+#spotify-logo {
+    display: none;
+}
+
+
 .sidebar ul {
     list-style: none;
     color: white;
     padding: 15px;
+}
+
+.sidebar a {
+    display: none;
 }
 
 .sidebar-playlist-ul {
@@ -39,6 +48,16 @@ main .sidebar {
     position: absolute;
     bottom: 0;
     
+}
+
+.small {
+    width: 24px;
+    height: 24px;
+    
+}
+
+.nav-item {
+    display: flex;
 }
 
 /* END LEFT SIDEBAR */
@@ -62,6 +81,9 @@ main .content {
     background-color: rgba(20,25,34,255);
     overflow-y: scroll;
 }
+
+
+
 
 .row-name {
     margin-left: 30px;
@@ -140,6 +162,86 @@ main .content {
 .app footer {
     height: 80px; 
     background-color: #282828;
+    font-size: 30px;
 }
+footer img {
+    max-width: 50px;
+    height: auto;
+}
+.col-center {
+    flex-grow: 1;
+}
+
+.now-playing-album {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.now-playing-album-txt {
+    margin-left: 30px;
+}
+
+.now-playing-album h5 {
+    color: white;
+}
+
+.now-playing-album h6 {
+    color: grey;
+}
+
+i {
+    color: gray;
+    margin-left: 30px;
+}
+
+.center-bar {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    padding: 15px;
+}
+
+.command-bar-center ul, .command-bar-right ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.right-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
 /* END FOOTER */
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 767px) {
+
+    #spotify-logo-small {
+      display: none;
+    }
+    #spotify-logo {
+        display: block;
+    }
+
+    .sidebar a {
+        display: block;
+    }
+}

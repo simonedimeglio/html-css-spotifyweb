@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/12bool.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Spotify Web</title>
@@ -20,20 +20,35 @@
 
             <!-- LEFT SIDEBAR -->
             <div class="sidebar col-xs-1 col-md-2">
-
+                
                 <ul class="sidebar-nav-ul">
                     <li>
-                        <div id="spotify-logo"><img src="img/logo.svg" alt="Spotify-logo"></div>
+                            <div><img src="img/logo.svg" alt="Spotify logo" id="spotify-logo"></div>
+                            <div><img src="img/logo-small.svg" alt="Spotify logo" id="spotify-logo-small"></div>
                     </li>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Cerca</a></li>
-                    <li><a href="">La tua libreria</a></li>
-
+                    <li>
+                        <div class="nav-item"> 
+                            <img src="img/search.svg" alt="" class="small">
+                            <a href=""><span>Cerca</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-item">
+                            <img src="img/home.svg" alt="" class="small">
+                            <a href=""><span>Home</span></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="nav-item">
+                            <img src="img/libreria.svg" alt="" class="small">
+                            <a href=""><span>La Tua Libreria</span></a>
+                        </div>
+                    </li>
                 </ul>
 
                 <ul class="sidebar-playlist-ul">
-                    <li>PLAYLIST</li>
-                    <li><a href="">Crea Playlist</a></li>
+                    <li><a href="">PLAYLIST</a></li>
+                    <li><i class="fas fa-plus-square"></i><a href="">Crea Playlist</a></li>
                     <li><a href="">Nome Playlist</a></li>
                     <li><a href="">Nome Playlist</a></li>
                     <li><a href="">Nome Playlist</a></li>
@@ -149,6 +164,43 @@
         </main>
 
         <footer>
+
+            <div class="row">
+                <div class="col left-bar">
+                    <div class="now-playing-album">
+                        <img src="img/split.jpeg" alt="Split soundtrack">
+                        <div class="now-playing-album-txt">
+                            <h5>Split</h5>
+                            <h6>A Way Out</h6>
+                        </div>
+                        <a href=""><i class="far fa-heart"></i></a>
+                        <a href=""><i class="far fa-folder"></i></a>
+                    </div>
+                </div>
+                <div class="col center-bar">
+                    <div class="command-bar-center">
+                        <ul>
+                            <li><a href=""><i class="fas fa-random"></i></a></li>
+                            <li><a href=""><i class="fas fa-step-backward"></i></a></li>
+                            <li><a href=""><i class="far fa-play-circle"></i></a></li>
+                            <li><a href=""><i class="fas fa-step-forward"></i></a></li>
+                            <li><a href=""><i class="fas fa-redo"></i></a></li>
+                        </ul>
+            
+                    </div>
+                
+                </div>
+                <div class="col right-bar">
+                    <div class="command-bar-right">
+                        <ul>
+                            <li><a href=""><i class="fas fa-list-ul"></i></a></li>
+                            <li><a href=""><i class="fas fa-desktop"></i></a></li>
+                            <li><a href=""><i class="fas fa-volume-up"></i></a></li>
+                        </ul>
+                    </div>
+    
+                </div>
+            </div>
 
         </footer>
 
