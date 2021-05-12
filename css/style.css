@@ -1,30 +1,145 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .app {
     max-height: 100vh;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+/* MAIN */
 .app main {
-    height: calc(100vh - 90px);
-    background-color: orange;
+    height: calc(100vh - 80px);
+}
+
+/* LEFT SIDEBAR */
+main .sidebar {
+    background-color: rgba(0,0,0,255);
+    position: relative;
+}
+
+.sidebar ul {
+    list-style: none;
+    color: white;
+    padding: 15px;
+}
+
+.sidebar-playlist-ul {
+    overflow-y: scroll;
+}
+
+.sidebar-user-ul {
+    position: absolute;
+    bottom: 0;
     
 }
 
-.app footer {
-    height: 90px; 
-    background-color: #282828;
-}
+/* END LEFT SIDEBAR */
 
-main .sidebar {
-    background-color: rgba(0,0,0,255);
-}
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* CONTENT */
 main .content {
     height: 100%;
     background-color: rgba(20,25,34,255);
     overflow-y: scroll;
 }
 
-/* .item {
-    height: 200vh;
-    width: 400px;
-    background-color: red;
-} */
+.row-name {
+    margin-left: 30px;
+}
+
+.content h3 {
+    color: white;
+}
+
+.content h6 {
+    color: gray;
+}
+
+.album {
+    margin-left: 30px;
+}
+
+/* Upgrade bar */
+.upgrade-bar {
+    height: 80px;
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+.upgrade-bar a{
+    margin-right: 20px;
+}
+/* End upgrade bar */
+
+/* Content nav */
+.content nav ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.content nav ul li {
+    margin-right: 10px;
+}
+
+.content nav ul li:last-child {
+    margin-right: 0;
+    
+}
+/* End content nav */
+
+
+.album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 230px;
+    text-align: center;
+}
+
+.album img {
+    max-width: 230px;
+    height: auto;
+}
+
+.popular img {
+    border-radius: 50%;
+}
+
+
+/* END CONTENT */
+/* END MAIN */
+
+
+/* FOOTER */
+.app footer {
+    height: 80px; 
+    background-color: #282828;
+}
+/* END FOOTER */
+

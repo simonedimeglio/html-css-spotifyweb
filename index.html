@@ -1,34 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/12bool.css">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Spotify Web</title>
-    </head>
-    <body>
-        <div class="container-fluid app">
-            
-            <main class="row">
 
-                <div class="sidebar col-xs-1 col-md-2">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/12bool.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Spotify Web</title>
+</head>
 
+<body>
+    <div class="container-fluid app">
+
+        <main class="row">
+
+            <!-- LEFT SIDEBAR -->
+            <div class="sidebar col-xs-1 col-md-2">
+
+                <ul class="sidebar-nav-ul">
+                    <li>
+                        <div id="spotify-logo"><img src="img/logo.svg" alt="Spotify-logo"></div>
+                    </li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Cerca</a></li>
+                    <li><a href="">La tua libreria</a></li>
+
+                </ul>
+
+                <ul class="sidebar-playlist-ul">
+                    <li>PLAYLIST</li>
+                    <li><a href="">Crea Playlist</a></li>
+                    <li><a href="">Nome Playlist</a></li>
+                    <li><a href="">Nome Playlist</a></li>
+                    <li><a href="">Nome Playlist</a></li>
+                    <li><a href="">Nome Playlist</a></li>
+                    <li><a href="">Nome Playlist</a></li>
+                    <li><a href="">Nome Playlist</a></li>
+                    <li><a href="">Nome Playlist</a></li>
+                </ul>
+
+                <div class="sidebar-user-ul">
+                    <ul>
+                        <li><a href="">Installa App</a></li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li><a href="">Simone Di Meglio</a></li>
+                    </ul>
                 </div>
 
-                <div class="content col-xs-11 col-md-10">
+            </div>
 
-                    <!-- <div class="item"></div> -->
 
+
+
+
+
+
+
+
+
+
+            <!-- CONTENT -->
+            <div class="content col-xs-11 col-md-10">
+
+
+                <!-- "UPGRADE" FIXED BAR -->
+                <div class="upgrade-bar row">
+                    <div class="upgrade-button col-xs-12"><a href="">EFFETTUA L'UPGRADE</a></div>
                 </div>
-            
-            </main>
-            
-            <footer>
 
-            </footer>
-        
-        </div>
-    </body>
+                <!-- CONTENT NAV -->
+                <nav>
+                    <ul>
+                        <li><a href="">IN EVIDENZA</a></li>
+                        <li><a href="">PODCAST</a></li>
+                        <li><a href="">CLASSIFICHE</a></li>
+                        <li><a href="">GENERI E MOOD</a></li>
+                        <li><a href="">NUOVE USCITE</a></li>
+                        <li><a href="">SCOPRI</a></li>
+                    </ul>
+                </nav>
+
+                <h1 class="row-name">Recently Played</h1>
+                <div class="row">
+                     <div class="album">
+                        <img src="img/metal_lifting.jpg" alt="Heavy metal">
+                        <h3>Heavy Metal</h3>
+                        <h6>Metallica, Pantera</h6>
+                    </div>
+                    <div class="album">
+                        <img src="img/stranger.jpeg" alt="Stranger things soundtrack">
+                        <h3>Stranger Things Vol 1. (A Netflix Original Series Soundtrack)</h3>
+                        <h6>Kyle Dixon & Michael Stein</h6>
+                    </div>
+                    <div class="album">
+                        <img src="img/aquietplace.jpeg" alt="A quiet place soundtrack">
+                        <h3>A Quiet Place</h3>
+                        <h6>Marco Beltrami</h6>
+                    </div>
+                    <div class="album">
+                        <img src="img/split.jpeg" alt="Split">
+                        <h3>Split</h3>
+                        <h6>West Dylan Thordson</h6>
+                    </div>
+                    <div class="album">
+                        <img src="img/cure.jpeg" alt="A cure for wellnes soundtrack">
+                        <h3>A cure for wellnes</h3>
+                        <h6>Benjamin Wallfish</h6>
+                    </div>
+                    <div class="album">
+                        <img src="img/sinister.jpeg" alt="Sinister soundtrack">
+                        <h3>Sinister</h3>
+                        <h6>Christopher Young</h6>
+                    </div>
+                </div>
+
+                <h1 class="row-name">Creato per Simone Di Meglio</h1>
+                <h6 class="row-name">Più ascolti, più accurati saranno i suggerimenti</h6>
+                <div class="row">
+                     <div class="album">
+                        <img src="img/radar.jpeg" alt="Release Radar">
+                        <h3>Release Radar</h3>
+                    </div>
+                    <div class="album">
+                        <img src="img/mixdaily.jpeg" alt="My daily mix 1">
+                        <h3>Daily Mix 1</h3>
+                    </div>
+                </div>
+
+                <h1 class="row-name">Ascolti più popolari</h1>
+                <h6 class="row-name">Più ascolti, più accurati saranno i suggerimenti</h6>
+                <div class="row">
+                     <div class="album popular">
+                        <img src="img/youg.jpeg" alt="Youg">
+                        <h3>Release Radar</h3>
+                    </div>
+                    <div class="album popular">
+                        <img src="img/einaudi.jpeg" alt="Einaudi">
+                        <h3>Daily Mix 1</h3>
+                    </div>
+                </div>
+
+        </main>
+
+        <footer>
+
+        </footer>
+
+    </div>
+</body>
+
 </html>
