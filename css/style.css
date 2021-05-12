@@ -8,7 +8,7 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
+    color: gray;
 }
 
 h1 {
@@ -23,6 +23,9 @@ h1 {
 main .sidebar {
     background-color: rgba(0,0,0,255);
     position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 #spotify-logo {
@@ -32,8 +35,29 @@ main .sidebar {
 
 .sidebar ul {
     list-style: none;
-    color: white;
-    padding: 15px;
+    color: gray;
+    margin: 15px 0 0 15px;
+}
+
+
+.sidebar li {
+    margin: 15px 0;
+    font-size: 10px;
+}
+
+.playlist-sidebar {
+    flex-grow: 1;
+    min-height: 50px;
+    padding: 0 10px;
+}
+
+.new-playlist, .download-link, .user {
+    display: flex;
+    align-items: center;
+}
+
+.new-playlist i, .user i{
+    font-size: 30px;
 }
 
 .sidebar a {
@@ -50,14 +74,12 @@ main .sidebar {
     
 }
 
-.small {
-    width: 24px;
-    height: 24px;
-    
-}
-
 .nav-item {
     display: flex;
+}
+
+.nav-item img {
+    max-height: 24px;
 }
 
 /* END LEFT SIDEBAR */
@@ -109,11 +131,16 @@ main .content {
     display: flex;
     align-items: center;
     position: fixed;
+    justify-content: flex-end;
 }
 
-.upgrade-bar a{
-    margin-right: 20px;
+.upgrade-button a{
+    margin-right: 350px;
+    border: 1px solid white;
+    padding: 10px 30px;
+    border-radius: 30px;
 }
+
 /* End upgrade bar */
 
 /* Content nav */
@@ -123,10 +150,11 @@ main .content {
     margin-top: 100px;
     list-style: none;
     flex-wrap: wrap;
+    font-size: 15px;
 }
 
 .content nav ul li {
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .content nav ul li:last-child {
@@ -159,10 +187,18 @@ main .content {
 
 
 /* FOOTER */
+footer {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
 .app footer {
     height: 80px; 
     background-color: #282828;
-    font-size: 30px;
+    font-size: 15px;
 }
 footer img {
     max-width: 50px;
@@ -190,7 +226,7 @@ footer img {
     color: grey;
 }
 
-i {
+footer i {
     color: gray;
     margin-left: 30px;
 }
@@ -208,6 +244,27 @@ i {
     justify-content: center;
     list-style: none;
     flex-wrap: wrap;
+}
+
+.time-bar {
+    display: flex;
+}
+
+.bar {
+    ;
+}
+
+.played {
+    width: 20%;
+    height: 2px;
+    background-color: lightgrey;
+}
+
+.unplayed {
+    height: 4px;
+    width: 80%;
+    background-color: grey;
+    margin-left: 15px;
 }
 
 .right-bar {
@@ -239,6 +296,7 @@ i {
     }
     #spotify-logo {
         display: block;
+        max-height: 40px;
     }
 
     .sidebar a {

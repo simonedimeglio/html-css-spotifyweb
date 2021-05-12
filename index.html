@@ -20,51 +20,58 @@
 
             <!-- LEFT SIDEBAR -->
             <div class="sidebar col-xs-1 col-md-2">
-                
-                <ul class="sidebar-nav-ul">
-                    <li>
+
+                <div class="sidebar-nav">
+                    <ul class="sidebar-nav-ul">
+                        <li>
                             <div><img src="img/logo.svg" alt="Spotify logo" id="spotify-logo"></div>
                             <div><img src="img/logo-small.svg" alt="Spotify logo" id="spotify-logo-small"></div>
-                    </li>
-                    <li>
-                        <div class="nav-item"> 
-                            <img src="img/search.svg" alt="" class="small">
-                            <a href=""><span>Cerca</span></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="nav-item">
-                            <img src="img/home.svg" alt="" class="small">
-                            <a href=""><span>Home</span></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="nav-item">
-                            <img src="img/libreria.svg" alt="" class="small">
-                            <a href=""><span>La Tua Libreria</span></a>
-                        </div>
-                    </li>
-                </ul>
+                        </li>
+                        <li>
+                            <div class="nav-item">
+                                <img src="img/home.svg" alt="">
+                                <a href=""><span>Home</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-item"> 
+                                <img src="img/search.svg" alt="">
+                                <a href=""><span>Cerca</span></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav-item">
+                                <img src="img/libreria.svg" alt="">
+                                <a href=""><span>La Tua Libreria</span></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                
 
-                <ul class="sidebar-playlist-ul">
-                    <li><a href="">PLAYLIST</a></li>
-                    <li><i class="fas fa-plus-square"></i><a href="">Crea Playlist</a></li>
-                    <li><a href="">Nome Playlist</a></li>
-                    <li><a href="">Nome Playlist</a></li>
-                    <li><a href="">Nome Playlist</a></li>
-                    <li><a href="">Nome Playlist</a></li>
-                    <li><a href="">Nome Playlist</a></li>
-                    <li><a href="">Nome Playlist</a></li>
-                    <li><a href="">Nome Playlist</a></li>
-                </ul>
+                <div class="playlist-sidebar">
+                    <ul class="sidebar-playlist-ul">
+                        <li><a href="">PLAYLIST</a></li>
+                        <li class="new-playlist"><i class="fas fa-plus-square"></i><a href="">Crea Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                        <li><a href="">Nome Playlist</a></li>
+                    </ul>
+                </div>
+               
 
                 <div class="sidebar-user-ul">
                     <ul>
-                        <li><a href="">Installa App</a></li>
+                        <li class="download-link"><i class="far fa-arrow-alt-circle-down"></i><a href="">Installa App</a></li>
                         <li>
                             <hr>
                         </li>
-                        <li><a href="">Simone Di Meglio</a></li>
+                        <li class="user"><i class="fas fa-user-circle"></i><a href="">Simone Di Meglio</a></li>
                     </ul>
                 </div>
 
@@ -85,8 +92,8 @@
 
 
                 <!-- "UPGRADE" FIXED BAR -->
-                <div class="upgrade-bar row">
-                    <div class="upgrade-button col-xs-12"><a href="">EFFETTUA L'UPGRADE</a></div>
+                <div class="upgrade-bar">
+                        <div class="upgrade-button"><a href="">EFFETTUA L'UPGRADE</a></div> 
                 </div>
 
                 <!-- CONTENT NAV -->
@@ -186,7 +193,14 @@
                             <li><a href=""><i class="fas fa-step-forward"></i></a></li>
                             <li><a href=""><i class="fas fa-redo"></i></a></li>
                         </ul>
-            
+                    </div>
+                    <div class="time-bar">
+        
+                        <span>0:25</span>
+                        <div class="bar">
+                            <div class="unplayed col-xs-12"></div>
+                        </div>
+                        <span>4:35</span>
                     </div>
                 
                 </div>
