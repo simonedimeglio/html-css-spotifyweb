@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/12bool.css">
     <link rel="stylesheet" href="css/style.css">
@@ -34,7 +33,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="nav-item"> 
+                            <div class="nav-item">
                                 <img src="img/search.svg" alt="">
                                 <a href=""><span>Cerca</span></a>
                             </div>
@@ -46,28 +45,27 @@
                             </div>
                         </li>
                     </ul>
-                </div>
-                
-                
 
-                <div class="playlist-sidebar">
-                    <ul class="sidebar-playlist-ul">
-                        <li><a href="">PLAYLIST</a></li>
-                        <li class="new-playlist"><i class="fas fa-plus-square"></i><a href="">Crea Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                        <li><a href="">Nome Playlist</a></li>
-                    </ul>
+                    <div class="playlist-sidebar">
+                        <ul class="sidebar-playlist-ul">
+                            <li><a href="">PLAYLIST</a></li>
+                            <li class="new-playlist"><i class="fas fa-plus-square"></i><a href="">Crea Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                            <li><a href="">Nome Playlist</a></li>
+                        </ul>
+                    </div>
                 </div>
-               
+
 
                 <div class="sidebar-user-ul">
                     <ul>
-                        <li class="download-link"><i class="far fa-arrow-alt-circle-down"></i><a href="">Installa App</a></li>
+                        <li class="download-link"><i class="far fa-arrow-alt-circle-down"></i><a href="">Installa
+                                App</a></li>
                         <li>
                             <hr>
                         </li>
@@ -79,21 +77,13 @@
 
 
 
-
-
-
-
-
-
-
-
-            <!-- CONTENT -->
+            <!-- MAIN CONTENT -->
             <div class="content col-xs-11 col-md-10">
 
 
                 <!-- "UPGRADE" FIXED BAR -->
                 <div class="upgrade-bar">
-                        <div class="upgrade-button"><a href="">EFFETTUA L'UPGRADE</a></div> 
+                    <div class="upgrade-button"><a href="">EFFETTUA L'UPGRADE</a></div>
                 </div>
 
                 <!-- CONTENT NAV -->
@@ -110,7 +100,7 @@
 
                 <h1 class="row-name">Recently Played</h1>
                 <div class="row">
-                     <div class="album">
+                    <div class="album">
                         <img src="img/metal_lifting.jpg" alt="Heavy metal">
                         <h3>Heavy Metal</h3>
                         <h6>Metallica, Pantera</h6>
@@ -143,9 +133,9 @@
                 </div>
 
                 <h1 class="row-name">Creato per Simone Di Meglio</h1>
-                <h6 class="row-name">Più ascolti, più accurati saranno i suggerimenti</h6>
+                <h6 class="row-subname">Più ascolti, più accurati saranno i suggerimenti</h6>
                 <div class="row">
-                     <div class="album">
+                    <div class="album">
                         <img src="img/radar.jpeg" alt="Release Radar">
                         <h3>Release Radar</h3>
                     </div>
@@ -156,9 +146,9 @@
                 </div>
 
                 <h1 class="row-name">Ascolti più popolari</h1>
-                <h6 class="row-name">Più ascolti, più accurati saranno i suggerimenti</h6>
+                <h6 class="row-subname">Più ascolti, più accurati saranno i suggerimenti</h6>
                 <div class="row">
-                     <div class="album popular">
+                    <div class="album popular">
                         <img src="img/youg.jpeg" alt="Youg">
                         <h3>Release Radar</h3>
                     </div>
@@ -171,54 +161,63 @@
         </main>
 
         <footer>
+            <div class="footer-container">
 
-            <div class="row">
-                <div class="col left-bar">
+                <!-- LEFT -->
+                <div class="left-bar">
                     <div class="now-playing-album">
                         <img src="img/split.jpeg" alt="Split soundtrack">
                         <div class="now-playing-album-txt">
                             <h5>Split</h5>
                             <h6>A Way Out</h6>
                         </div>
-                        <a href=""><i class="far fa-heart"></i></a>
-                        <a href=""><i class="far fa-folder"></i></a>
+                        <div class="now-playing-buttons">
+                            <a href=""><i class="far fa-heart"></i></a>
+                            <a href=""><i class="far fa-folder"></i></a>
+                        </div>
+
                     </div>
                 </div>
-                <div class="col center-bar">
-                    <div class="command-bar-center">
+
+                <!-- CENTER -->
+                <div class="center-bar">
+                    
+                    <div class="command-bar-center row">
                         <ul>
                             <li><a href=""><i class="fas fa-random"></i></a></li>
                             <li><a href=""><i class="fas fa-step-backward"></i></a></li>
-                            <li><a href=""><i class="far fa-play-circle"></i></a></li>
+                            <li><a href=""><i class="far fa-play-circle" id="big-button"></i></a></li>
                             <li><a href=""><i class="fas fa-step-forward"></i></a></li>
                             <li><a href=""><i class="fas fa-redo"></i></a></li>
                         </ul>
                     </div>
+
                     <div class="time-bar">
-        
-                        <span>0:25</span>
-                        <div class="bar">
-                            <div class="unplayed col-xs-12"></div>
+                        <div><span>0:25</span></div>
+                        <div>
+                            <div class="unplayed"></div>
                         </div>
-                        <span>4:35</span>
+                        <div><span>4:35</span></div>
+
                     </div>
-                
                 </div>
-                <div class="col right-bar">
+
+                <!-- RIGHT -->
+                <div class="right-bar">
                     <div class="command-bar-right">
                         <ul>
                             <li><a href=""><i class="fas fa-list-ul"></i></a></li>
                             <li><a href=""><i class="fas fa-desktop"></i></a></li>
                             <li><a href=""><i class="fas fa-volume-up"></i></a></li>
+                            <li></li>
                         </ul>
                     </div>
-    
                 </div>
+
             </div>
 
         </footer>
 
     </div>
 </body>
-
 </html>
