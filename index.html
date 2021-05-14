@@ -18,7 +18,7 @@
         <main class="row">
 
             <!-- LEFT SIDEBAR -->
-            <div class="sidebar col-xs-1 col-md-2">
+            <div class="sidebar col-xs-1 col-sm-2">
 
                 <div class="sidebar-nav">
                     <ul class="sidebar-nav-ul">
@@ -64,12 +64,9 @@
 
                 <div class="sidebar-user-ul">
                     <ul>
-                        <li class="download-link"><i class="far fa-arrow-alt-circle-down"></i><a href="">Installa
-                                App</a></li>
-                        <li>
-                            <hr>
-                        </li>
-                        <li class="user"><i class="fas fa-user-circle"></i><a href="">Simone Di Meglio</a></li>
+                        <li class="download-link"><i class="far fa-arrow-alt-circle-down"></i><a href="">InstallaApp</a></li>
+                        <li><hr></li>
+                        <li class="user"><i class="fas fa-user-circle"></i><a href="" id="profile">Simone Di Meglio</a></li>
                     </ul>
                 </div>
 
@@ -78,7 +75,7 @@
 
 
             <!-- MAIN CONTENT -->
-            <div class="content col-xs-11 col-md-10">
+            <div class="content col-xs-11 col-sm-10">
 
 
                 <!-- "UPGRADE" FIXED BAR -->
@@ -98,35 +95,60 @@
                     </ul>
                 </nav>
 
+
+                
+
+
+                <!-- ALBUMS CONTAINER -->
                 <h1 class="row-name">Recently Played</h1>
-                <div class="row">
+                <div class="row row-first">
                     <div class="album">
-                        <img src="img/metal_lifting.jpg" alt="Heavy metal">
+                        <div class="img-container">
+                          <img src="img/metal_lifting.jpg" alt="Heavy metal">  
+                          <i class="far fa-play-circle"></i>
+                        </div>
+                        
                         <h3>Heavy Metal</h3>
                         <h6>Metallica, Pantera</h6>
                     </div>
                     <div class="album">
-                        <img src="img/stranger.jpeg" alt="Stranger things soundtrack">
+                        <div class="img-container">
+                            <img src="img/stranger.jpeg" alt="Stranger things soundtrack">
+                            <div class="hover-container"><i class="far fa-play-circle"></i></div>
+                            
+                        </div>
                         <h3>Stranger Things Vol 1. (A Netflix Original Series Soundtrack)</h3>
                         <h6>Kyle Dixon & Michael Stein</h6>
                     </div>
                     <div class="album">
-                        <img src="img/aquietplace.jpeg" alt="A quiet place soundtrack">
+                        <div class="img-container">
+                            <img src="img/aquietplace.jpeg" alt="A quiet place soundtrack">
+                            <i class="far fa-play-circle"></i>
+                        </div>
                         <h3>A Quiet Place</h3>
                         <h6>Marco Beltrami</h6>
                     </div>
                     <div class="album">
-                        <img src="img/split.jpeg" alt="Split">
+                        <div class="img-container">
+                            <img src="img/split.jpeg" alt="Split">
+                            <i class="far fa-play-circle"></i>
+                        </div>
                         <h3>Split</h3>
                         <h6>West Dylan Thordson</h6>
                     </div>
                     <div class="album">
-                        <img src="img/cure.jpeg" alt="A cure for wellnes soundtrack">
+                        <div class="img-container">
+                            <img src="img/cure.jpeg" alt="A cure for wellnes soundtrack">
+                            <i class="far fa-play-circle"></i>
+                        </div>
                         <h3>A cure for wellnes</h3>
                         <h6>Benjamin Wallfish</h6>
                     </div>
                     <div class="album">
-                        <img src="img/sinister.jpeg" alt="Sinister soundtrack">
+                        <div class="img-container">
+                            <img src="img/sinister.jpeg" alt="Sinister soundtrack">
+                            <i class="far fa-play-circle"></i>
+                        </div>
                         <h3>Sinister</h3>
                         <h6>Christopher Young</h6>
                     </div>
@@ -136,11 +158,17 @@
                 <h6 class="row-subname">Più ascolti, più accurati saranno i suggerimenti</h6>
                 <div class="row">
                     <div class="album">
-                        <img src="img/radar.jpeg" alt="Release Radar">
+                        <div class="img-container">
+                            <img src="img/radar.jpeg" alt="Release Radar">
+                            <i class="far fa-play-circle"></i>
+                        </div>
                         <h3>Release Radar</h3>
                     </div>
                     <div class="album">
-                        <img src="img/mixdaily.jpeg" alt="My daily mix 1">
+                        <div class="img-container">
+                            <img src="img/mixdaily.jpeg" alt="My daily mix 1">
+                            <i class="far fa-play-circle"></i>    
+                        </div>
                         <h3>Daily Mix 1</h3>
                     </div>
                 </div>
@@ -149,11 +177,18 @@
                 <h6 class="row-subname">Più ascolti, più accurati saranno i suggerimenti</h6>
                 <div class="row">
                     <div class="album popular">
-                        <img src="img/youg.jpeg" alt="Youg">
+                        <div class="img-container">
+                            <img src="img/youg.jpeg" alt="Youg">
+                            <i class="far fa-play-circle"></i> 
+                        </div>
+                        
                         <h3>Release Radar</h3>
                     </div>
                     <div class="album popular">
-                        <img src="img/einaudi.jpeg" alt="Einaudi">
+                        <div class="img-container">
+                            <img src="img/einaudi.jpeg" alt="Einaudi">
+                            <i class="far fa-play-circle"></i>    
+                        </div>
                         <h3>Daily Mix 1</h3>
                     </div>
                 </div>
@@ -161,63 +196,73 @@
         </main>
 
         <footer>
-            <div class="footer-container">
 
-                <!-- LEFT -->
-                <div class="left-bar">
-                    <div class="now-playing-album">
-                        <img src="img/split.jpeg" alt="Split soundtrack">
-                        <div class="now-playing-album-txt">
-                            <h5>Split</h5>
-                            <h6>A Way Out</h6>
-                        </div>
-                        <div class="now-playing-buttons">
-                            <a href=""><i class="far fa-heart"></i></a>
-                            <a href=""><i class="far fa-folder"></i></a>
-                        </div>
 
-                    </div>
+        
+
+            <!-- LEFT SIDE -->
+            <div class="player-album">
+                <div class="player-album-cover">
+                    <img src="img/split.jpeg" alt="Split cover album">
+                </div> 
+                        
+                <div class="player-album-title">
+                    <h2>Split</h2>
+                    <div class="song-name">A Way Out</div>
+                </div> 
+
+                <div class="player-album-icons">
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
+                </div> 
+            </div>
+
+
+            <!-- CENTER -->
+            <div class="player-controller">
+
+                <div class="controller-container">
+                    <div><i class="fas fa-random"></i></div>
+                    <div><i class="fas fa-step-backward"></i></div>
+                    <div><i class="far fa-play-circle" id="big-button"></i></div>
+                    <div><i class="fas fa-step-forward"></i></div>
+                    <div><i class="fas fa-redo"></i></div>
                 </div>
 
-                <!-- CENTER -->
-                <div class="center-bar">
-                    
-                    <div class="command-bar-center row">
-                        <ul>
-                            <li><a href=""><i class="fas fa-random"></i></a></li>
-                            <li><a href=""><i class="fas fa-step-backward"></i></a></li>
-                            <li><a href=""><i class="far fa-play-circle" id="big-button"></i></a></li>
-                            <li><a href=""><i class="fas fa-step-forward"></i></a></li>
-                            <li><a href=""><i class="fas fa-redo"></i></a></li>
-                        </ul>
-                    </div>
-
-                    <div class="time-bar">
-                        <div><span>0:25</span></div>
-                        <div>
-                            <div class="unplayed"></div>
+                <div class="time-bar-container">
+                    <div class="time-counter">1:25</div>
+                    <div class="unplayed">
+                        <div class="played">
+                            <div class="dot-container">
+                                <i class="fas fa-circle dot" id="time-dot"></i>
+                            </div>
                         </div>
-                        <div><span>4:35</span></div>
-
+                        
                     </div>
-                </div>
-
-                <!-- RIGHT -->
-                <div class="right-bar">
-                    <div class="command-bar-right">
-                        <ul>
-                            <li><a href=""><i class="fas fa-list-ul"></i></a></li>
-                            <li><a href=""><i class="fas fa-desktop"></i></a></li>
-                            <li><a href=""><i class="fas fa-volume-up"></i></a></li>
-                            <li></li>
-                        </ul>
-                    </div>
+                    <div class="time-counter">4:35</div>
                 </div>
 
             </div>
 
+
+            <!-- RIGHT SIDE -->
+            <div class="player-audio">
+
+                    <div><a href=""><i class="fas fa-list-ul"></i></div>
+                    <div><a href=""><i class="fas fa-desktop"></i></div>
+                    <div><a href=""><i class="fas fa-volume-up"></i></div>
+                    <div class="volume-rocker-container">
+                        <div class="volume-rocker">
+                            <div class="volume-rocker-used">
+                                <div class="dot-container">
+                                    <i class="fas fa-circle dot" id="volume-dot"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
         </footer>
 
-    </div>
-</body>
+    </body>
 </html>

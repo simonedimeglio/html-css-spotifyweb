@@ -19,42 +19,65 @@ h1 {
     height: calc(100vh - 80px);
 }
 
+
 /* LEFT SIDEBAR */
 main .sidebar {
     background-color: rgba(0,0,0,255);
-    position: relative;
     height: 100%;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    justify-content: space-between;
 }
 
 #spotify-logo {
     display: none;
 }
 
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 80px);
+}
 
 .sidebar ul {
     list-style: none;
     color: gray;
-    margin: 15px 0 0 15px;
+    padding: 12px;
 }
 
 
 .sidebar li {
     margin: 15px 0;
-    font-size: 10px;
+    font-size: 8px;
+}
+
+.sidebar ul li:hover {
+    color: white;
+}
+
+.sidebar ul li a:hover {
+    color: white;
 }
 
 .playlist-sidebar {
     flex-grow: 1;
-    min-height: 50px;
-    padding: 0 10px;
+    flex-shrink: 1;
+    overflow-y: auto;
+    min-height: 200px;
 }
 
 .new-playlist, .download-link, .user {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
+
+.new-playlist {
+    justify-content: flex-start;
+    display: none;
+}
+
 
 .new-playlist i, .user i{
     font-size: 30px;
@@ -64,14 +87,10 @@ main .sidebar {
     display: none;
 }
 
-.sidebar-playlist-ul {
-    overflow-y: scroll;
-}
-
 .sidebar-user-ul {
-    position: absolute;
-    bottom: 0;
-    
+    height: 160px;
+    display: flex;
+    align-items: flex-end;
 }
 
 .nav-item {
@@ -81,6 +100,16 @@ main .sidebar {
 .nav-item img {
     max-height: 24px;
 }
+
+hr {
+    display: none;
+}
+
+#profile {
+    color: white;
+    font-size: 16px;
+}
+
 
 /* END LEFT SIDEBAR */
 
@@ -104,44 +133,118 @@ main .content {
     overflow-y: scroll;
 }
 
-
-
-
-.row-name {
-    margin-left: 30px;
-}
-
-.content h3 {
-    color: white;
-}
-
-.content h6 {
-    color: gray;
-}
-
-.album {
-    margin-left: 30px;
-}
-
 /* Upgrade bar */
 .upgrade-bar {
     height: 80px;
     width: 100%;
     background-color: rgba(0,0,0,0.2);
-    display: flex;
-    align-items: center;
     position: fixed;
-    justify-content: flex-end;
+}
+
+.upgrade-button {
+    position: fixed;
+    right: 20px;
+    top: 30px;
+}
+
+.upgrade-button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .upgrade-button a{
-    margin-right: 350px;
     border: 1px solid white;
     padding: 10px 30px;
     border-radius: 30px;
+    font-size: 13px;
+    color: white;
 }
 
 /* End upgrade bar */
+
+nav ul li a:hover {
+    color: white;
+}
+.row-first {
+    max-width: 100%;
+}
+
+.row-name {
+    margin: 30px 0 15px 30px;
+}
+
+.row-subname {
+    margin: 0 0 15px 30px
+}
+
+
+.album {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 230px;
+    text-align: center;
+    margin-left: 15px;
+}
+
+.album img {
+    max-width: 230px; 
+    flex-basis: 180px;
+    flex-grow: 1; 
+    height: auto;
+    margin-top: 30px;
+}
+
+.img-container {
+    position: relative;
+}
+
+.album .img-container i {
+    
+    display: none;
+    font-size: 60px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+}
+
+.hover-container {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.img-container:hover i {
+    display: block;
+    cursor: pointer;
+}
+
+.img-container:hover img {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.popular img {
+    border-radius: 50%;
+}
+
+.content h3 {
+    color: white;
+    margin-top: 15px;
+}
+
+.content h6 {
+    color: gray;
+    margin-top: 5px;
+}
+
+
+
+
 
 /* Content nav */
 .content nav ul{
@@ -164,22 +267,7 @@ main .content {
 /* End content nav */
 
 
-.album {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 230px;
-    text-align: center;
-}
 
-.album img {
-    max-width: 230px;
-    height: auto;
-}
-
-.popular img {
-    border-radius: 50%;
-}
 
 
 /* END CONTENT */
@@ -187,113 +275,220 @@ main .content {
 
 
 /* FOOTER */
-footer {
+
+
+
+
+
+
+
+.app footer {
+    height: 80px;
+    background-color: #282828;
+    font-size: 15px;
     width: 100%;
-    height: 90px;
     position: fixed;
+    display: flex;
     bottom: 0;
     left: 0;
 }
 
-.app footer {
-    height: 80px; 
-    background-color: #282828;
-    font-size: 15px;
-}
-footer img {
-    max-width: 50px;
-    height: auto;
-}
-.col-center {
-    flex-grow: 1;
+.player-album, .player-audio {
+    flex-basis: 230px;
+    height: 100%;
 }
 
-.now-playing-album {
+.player-controller {
+    flex-basis: 50%;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.player-album {
     display: flex;
     align-items: center;
-    padding: 10px;
+    justify-content: space-around;
+    padding: 0 10px;
 }
 
-.now-playing-album-txt {
-    margin-left: 30px;
+.player-album-cover {
+    width: 20%;
 }
 
-.now-playing-album h5 {
+.player-album-cover img {
+    width: 100%;
+}
+
+.player-album-title {
+    width: 50%;
+    padding: 0 10px;
+}
+
+.player-album-title h2 {
+    font-size: 10px;
     color: white;
 }
 
-.now-playing-album h6 {
-    color: grey;
+.player-album-title .song-name {
+    font-size: 8px;
+    line-height: 1.4;
+    color: gray;
+}
+
+.song-name:hover {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.player-album-icons {
+    width: 30%;
+    padding: 0 10px;
+}
+
+.player-controller .controller-container, .player-controller .time-bar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-controller i {
+    padding: 0 5px;
+}
+
+.player-audio {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.player-audio-command {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.player-audio div a {
+    padding: 0 4px;
 }
 
 footer i {
     color: gray;
-    margin-left: 30px;
+    font-size: 12px;
 }
 
-.center-bar {
-    display: flex;
-    flex-direction: column;
+footer i:hover {
     color: white;
-    align-items: center;
-    padding: 15px;
+    cursor: pointer;
 }
 
-.command-bar-center ul, .command-bar-right ul {
+.controller-container i {
+    color: lightgray;
+}
+
+.time-counter {
+    color: lightgray;
+    margin: 0 10px;
     display: flex;
     justify-content: center;
-    list-style: none;
-    flex-wrap: wrap;
-}
-
-.time-bar {
-    display: flex;
-}
-
-.bar {
-    ;
-}
-
-.played {
-    width: 20%;
-    height: 2px;
-    background-color: lightgrey;
+    font-size: 10px;
 }
 
 .unplayed {
     height: 4px;
-    width: 80%;
+    width: 70%;
     background-color: grey;
-    margin-left: 15px;
 }
 
-.right-bar {
+.played {
+    width: 20%;
+    height: 4px;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.dot-container i{
+    padding: 0;
+}
+
+.dot {
+    color: white;
+    display: none;
+}
+
+.unplayed:hover {
+    cursor: pointer;
+}
+
+.unplayed:hover .played{
+    background-color: greenyellow;
+}
+
+.unplayed:hover #time-dot {
+    display: block;
+}
+
+
+.volume-rocker-container {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+}
+
+.volume-rocker {
+    height: 4px;
+    width: 50px;
+    background-color: grey;
+    margin: 0 10px 0 0;
+}
+
+.volume-rocker-used {
+    width: 10px;
+    height: 4px;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    
+}
+
+.volume-rocker:hover .volume-rocker-used {
+    background-color: greenyellow;
+    cursor: pointer;
+}
+
+.volume-rocker:hover #volume-dot {
+    display: block;
+    padding-left: 5px; /* just to see the little light-bar under*/
+}
+
+#big-button {
+    font-size: 20px;
+}
+
+#big-button:hover {
+    transform: scale(1.1);
 }
 
 /* END FOOTER */
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* MEDIA QUERIES */
 
-@media only screen and (min-width: 767px) {
+/* FROM XS TO SM */
+@media only screen and (min-width: 576px) {
 
     #spotify-logo-small {
-      display: none;
+        display: none;
     }
+
     #spotify-logo {
         display: block;
         max-height: 40px;
@@ -301,5 +496,38 @@ footer i {
 
     .sidebar a {
         display: block;
+    }
+    
+    hr {
+        display: block;
+    }
+
+    .download-link {
+        justify-content: flex-start;
+    }
+
+    .sidebar ul {
+    margin: 15px 0 0 15px;
+    }
+
+    .new-playlist {
+        display: flex;
+    }
+}
+
+
+/* FROM SM TO MD */
+@media only screen and (min-width: 768px) {
+
+    .sidebar li {
+        margin: 15px 0;
+        font-size: 14px;
+    }
+}
+
+/* FROM MD TO LG */
+@media only screen and (min-width: 992px) {
+    .row {
+        flex-wrap: nowrap;
     }
 }
