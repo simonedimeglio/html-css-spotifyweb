@@ -32,6 +32,11 @@ main .sidebar {
 
 #spotify-logo {
     display: none;
+    margin-bottom: 30px;
+}
+
+#spotify-logo-small {
+    margin-bottom: 30px;
 }
 
 .sidebar-nav {
@@ -97,6 +102,7 @@ main .sidebar {
     display: flex;
 }
 
+
 .nav-item img {
     max-height: 24px;
 }
@@ -107,7 +113,8 @@ hr {
 
 #profile {
     color: white;
-    font-size: 16px;
+    font-size: 12px;
+    margin-left: 5px;
 }
 
 
@@ -133,12 +140,24 @@ main .content {
     overflow-y: scroll;
 }
 
+.notable-line-container {
+    display: flex;
+    justify-content: center;
+}
+
+.notable {
+    color: greenyellow;
+    width: 40%;
+    text-align: center;
+}
+
 /* Upgrade bar */
 .upgrade-bar {
     height: 80px;
     width: 100%;
     background-color: rgba(0,0,0,0.2);
     position: fixed;
+    z-index: 1002;
 }
 
 .upgrade-button {
@@ -165,8 +184,10 @@ main .content {
 nav ul li a:hover {
     color: white;
 }
-.row-first {
-    max-width: 100%;
+
+.album-container {
+    display: flex;
+    flex-grow: 1;
 }
 
 .row-name {
@@ -182,16 +203,11 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 230px;
     text-align: center;
     margin-left: 15px;
 }
 
 .album img {
-    max-width: 230px; 
-    flex-basis: 180px;
-    flex-grow: 1; 
-    height: auto;
     margin-top: 30px;
 }
 
@@ -200,7 +216,6 @@ nav ul li a:hover {
 }
 
 .album .img-container i {
-    
     display: none;
     font-size: 60px;
     color: white;
@@ -287,10 +302,11 @@ nav ul li a:hover {
     background-color: #282828;
     font-size: 15px;
     width: 100%;
-    position: fixed;
+    position: relative;
     display: flex;
     bottom: 0;
     left: 0;
+    z-index: 1001;
 }
 
 .player-album, .player-audio {
@@ -360,13 +376,7 @@ nav ul li a:hover {
     padding: 0 5px;
 }
 
-.player-audio {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.player-audio-command {
+.player-audio, .player-audio-command {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -400,7 +410,7 @@ footer i:hover {
 
 .unplayed {
     height: 4px;
-    width: 70%;
+    width: 40%;
     background-color: grey;
 }
 
@@ -411,7 +421,6 @@ footer i:hover {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
 }
 
 .dot-container i{
@@ -481,7 +490,6 @@ footer i:hover {
 
 
 /* MEDIA QUERIES */
-
 /* FROM XS TO SM */
 @media only screen and (min-width: 576px) {
 
@@ -514,7 +522,6 @@ footer i:hover {
         display: flex;
     }
 }
-
 
 /* FROM SM TO MD */
 @media only screen and (min-width: 768px) {
