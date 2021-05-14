@@ -84,8 +84,16 @@ main .sidebar {
 }
 
 
-.new-playlist i, .user i{
+.new-playlist i {
     font-size: 30px;
+}
+
+#playlist-creation {
+    margin-left: 5px;
+}
+
+.user i {
+    font-size: 20px;
 }
 
 .sidebar a {
@@ -113,8 +121,9 @@ hr {
 
 #profile {
     color: white;
-    font-size: 12px;
+    font-size: 15px;
     margin-left: 5px;
+    display: none;
 }
 
 
@@ -138,6 +147,7 @@ main .content {
     height: 100%;
     background-color: rgba(20,25,34,255);
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .notable-line-container {
@@ -149,7 +159,9 @@ main .content {
     color: greenyellow;
     width: 40%;
     text-align: center;
+    display: block;
 }
+
 
 /* Upgrade bar */
 .upgrade-bar {
@@ -188,6 +200,7 @@ nav ul li a:hover {
 .album-container {
     display: flex;
     flex-grow: 1;
+    flex-wrap: wrap;    
 }
 
 .row-name {
@@ -205,10 +218,12 @@ nav ul li a:hover {
     align-items: center;
     text-align: center;
     margin-left: 15px;
+    width: calc(100% / 2 - 15px);
 }
 
 .album img {
     margin-top: 30px;
+    max-width: 100%;
 }
 
 .img-container {
@@ -515,7 +530,7 @@ footer i:hover {
     }
 
     .sidebar ul {
-    margin: 15px 0 0 15px;
+    margin: 0 0 0 15px;
     }
 
     .new-playlist {
@@ -530,11 +545,27 @@ footer i:hover {
         margin: 15px 0;
         font-size: 14px;
     }
+
+    .user i {
+        font-size: 15px;
+    }
+
+    #profile {
+        display: block;
+    }
+
+    .album {
+        width: calc(100% / 4 - 15px);
+    }
 }
 
 /* FROM MD TO LG */
 @media only screen and (min-width: 992px) {
     .row {
         flex-wrap: nowrap;
+    }
+
+    .album {
+        width: calc(100% / 6 - 15px);
     }
 }
