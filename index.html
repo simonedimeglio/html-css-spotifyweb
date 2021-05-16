@@ -1,119 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/12bool.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Spotify Web</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/12bool.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Spotify Web App</title>
+    </head>
 
-<body>
-    <div class="container-fluid app">
+    <body>
+        <div class="container-fluid app">
 
-        <main class="row">
+            <main class="row">
 
-            <!-- LEFT SIDEBAR -->
-            <div class="sidebar col-xs-1 col-sm-2">
+                <!-- LEFT SIDEBAR -->
+                <div class="sidebar col-xs-1 col-sm-2">
 
-                <div class="sidebar-nav">
-                    <ul class="sidebar-nav-ul">
-                        <li>
-                            <div><img src="img/logo.svg" alt="Spotify logo" id="spotify-logo"></div>
-                            <div><img src="img/logo-small.svg" alt="Spotify logo" id="spotify-logo-small"></div>
-                        </li>
-                        <li>
-                            <div class="nav-item">
-                                <img src="img/home.svg" alt="">
-                                <a href=""><span>Home</span></a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="nav-item">
-                                <img src="img/search.svg" alt="">
-                                <a href=""><span>Cerca</span></a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="nav-item">
-                                <img src="img/libreria.svg" alt="">
-                                <a href=""><span>La Tua Libreria</span></a>
-                            </div>
-                        </li>
-                    </ul>
+                    <!-- TOP & MIDDLE SECTION -->
+                    <div class="sidebar-nav">
 
-                    <div class="playlist-sidebar">
-                        <ul class="sidebar-playlist-ul">
-                            <li><a href="">PLAYLIST</a></li>
-                            <li class="new-playlist"><i class="fas fa-plus-square"></i><a href="" id="playlist-creation">Crea Playlist</a></li>
-                            <li><a href="">Nome Playlist</a></li>
-                            <li><a href="">Nome Playlist</a></li>
-                            <li><a href="">Nome Playlist</a></li>
-                            <li><a href="">Nome Playlist</a></li>
-                            <li><a href="">Nome Playlist</a></li>
-                            <li><a href="">Nome Playlist</a></li>
-                            <li><a href="">Nome Playlist</a></li>
+                        <!-- TOP SECTION: Logo and nav -->
+                        <ul class="sidebar-nav-ul">
+                            <li>
+                                <div><img src="img/logo.svg" alt="Spotify logo" id="spotify-logo"></div>
+                                <div><img src="img/logo-small.svg" alt="Spotify logo" id="spotify-logo-small"></div>
+                            </li>
+                            <li>
+                                <div class="nav-item">
+                                    <img src="img/home.svg" alt="">
+                                    <a href=""><span>Home</span></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav-item">
+                                    <img src="img/search.svg" alt="">
+                                    <a href=""><span>Search</span></a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="nav-item">
+                                    <img src="img/libreria.svg" alt="">
+                                    <a href=""><span>Your Library</span></a>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!-- MIDDLE SECTION: Playlist -->
+                        <div class="playlist-sidebar">
+                            <ul class="sidebar-playlist-ul">
+                                <li><a href="">PLAYLIST</a></li>
+                                <li class="new-playlist"><i class="fas fa-plus-square"></i><a href="" id="playlist-creation">Create Playlist</a></li>
+                                <li><a href="">Coding Music</a></li>
+                                <li><a href="">Chill Vibes</a></li>
+                                <li><a href="">Car Playlist</a></li>
+                                <li><a href="">Summer Hits</a></li>
+                                <li><a href="">Steve's Songs</a></li>
+                                <li><a href="">Workout PLS</a></li>
+                                <li><a href="">Relax Sounds</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <!-- BOTTOM SECTION -->
+                    <div class="sidebar-bottom-section">
+                        <ul>
+                            <li class="download-link"><i class="far fa-arrow-alt-circle-down"></i><a href="">DownloadApp</a></li>
+                            <li><hr></li>
+                            <li class="user"><i class="fas fa-user-circle"></i><div id="profile">Steve B.</div></li>
                         </ul>
                     </div>
+
                 </div>
 
+                <!-- MAIN CONTENT SECTION (Albums, Podcasts, Daily Mix, Release Radar etc.) -->
+                <div class="content col-xs-11 col-sm-10">
 
-                <div class="sidebar-user-ul">
-                    <ul>
-                        <li class="download-link"><i class="far fa-arrow-alt-circle-down"></i><a href="">InstallaApp</a></li>
-                        <li><hr></li>
-                        <li class="user"><i class="fas fa-user-circle"></i><div id="profile">Simone D.</div></li>
-                    </ul>
-                </div>
+                    <!-- "UPGRADE" BAR -->
+                    <div class="upgrade-bar">
+                        <div class="upgrade-button"><a href="">UPGRADE</a></div>
+                    </div>
 
-            </div>
+                    <!-- UPPER NAVIGATION BAR -->
+                    <nav>
+                        <ul>
+                            <li><a href="">WHAT'S NEW</a>
+                                <div class="notable-line-container">
+                                    <hr class="notable">
+                                </div>
+                            </li>
+                            <li><a href="">PODCASTS</a></li>
+                            <li><a href="">CHARTS</a></li>
+                            <li><a href="">MOOD</a></li>
+                            <li><a href="">RELEASES</a></li>
+                            <li><a href="">DISCOVER</a></li>
+                        </ul>
+                    </nav>
 
-            <!-- MAIN CONTENT -->
-            <div class="content col-xs-11 col-sm-10">
-
-                <!-- "UPGRADE" FIXED BAR -->
-                <div class="upgrade-bar">
-                    <div class="upgrade-button"><a href="">EFFETTUA L'UPGRADE</a></div>
-                </div>
-
-                <!-- UPPER NAVIGATION BAR -->
-                <nav>
-                    <ul>
-                        <li><a href="">IN EVIDENZA</a><div class="notable-line-container"><hr class="notable"></div></li>
-                        <li><a href="">PODCAST</a></li>
-                        <li><a href="">CLASSIFICHE</a></li>
-                        <li><a href="">GENERI E MOOD</a></li>
-                        <li><a href="">NUOVE USCITE</a></li>
-                        <li><a href="">SCOPRI</a></li>
-                    </ul>
-                </nav>
-
-                <!-- ALBUMS CONTAINER -->
-                <h1 class="row-name">Podcasts</h1>
-                
+                    <!-- ALBUMS CONTAINER -->
+                    <!-- First row -->
+                    <h1 class="row-name">Recently Played</h1>
                     <div class="album-container">
                         <div class="album">
                             <div class="img-container">
-                              <img src="refactoring-img/tilde-podcast.jpg" alt="Tilde Podcast">  
-                              <i class="far fa-play-circle"></i>
+                                <img src="refactoring-img/taxidriver.jpg" alt="Taxy Driver">
+                                <i class="far fa-play-circle"></i>
                             </div>
-                            
-                            <h3>Tilde</h3>
-                            <h6>Riccardo Palombo, Antonio Dini</h6>
+                            <h3>Taxi Driver</h3>
+                            <h6>Rkomi</h6>
                         </div>
                         <div class="album">
                             <div class="img-container">
-                                <img src="refactoring-img/mordente-podcast.jpg" alt="Il Mordente Podcast">
+                                <img src="refactoring-img/starboy.jpg" alt="Starboy">
                                 <div class="hover-container"><i class="far fa-play-circle"></i></div>
-                                
                             </div>
-                            <h3>Il Mordente</h3>
-                            <h6>Riccardo Palombo</h6>
+                            <h3>Starboy</h3>
+                            <h6>The Weeknd, Daft Punk</h6>
                         </div>
+                        <div class="album">
+                            <div class="img-container">
+                                <img src="refactoring-img/fineline.jpg" alt="Fine Line">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                            <h3>Fine Line</h3>
+                            <h6>Harry Styles</h6>
+                        </div>
+                        <div class="album">
+                            <div class="img-container">
+                                <img src="refactoring-img/monster.jpg" alt="Monster">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                            <h3>Monster</h3>
+                            <h6>Justin Bieber, Shawn Mendes</h6>
+                        </div>
+                        <div class="album">
+                            <div class="img-container">
+                                <img src="refactoring-img/leavethedooropen.jpg" alt="Leave The Door Open">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                            <h3>Leave The Door Open</h3>
+                            <h6>Bruno Mars, Anderson .Paak, Silk Sonic</h6>
+                        </div>
+                        <div class="album">
+                            <div class="img-container">
+                                <img src="refactoring-img/thestoryofsonnyboyslim.jpg" alt="The Story of Sonny Boy Slim">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                            <h3>The Story of Sonny Boy Slim</h3>
+                            <h6>Gary Clark Jr</h6>
+                        </div>
+                    </div>
+
+                    <!-- Second row -->
+                    <h1 class="row-name">Made for Steve Better</h1>
+                    <h6 class="row-subname">Get better recommendations the more you listen.</h6>
+                    <div class="album-container">
+                        <div class="album">
+                            <div class="img-container">
+                                <img src="img/radar.jpeg" alt="Release Radar">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                            <h3>Release Radar</h3>
+                        </div>
+                        <div class="album">
+                            <div class="img-container">
+                                <img src="img/mixdaily.jpeg" alt="My daily mix 1">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                            <h3>Daily Mix 1</h3>
+                        </div>
+                    </div>
+
+                    <!-- Third row -->
+                    <h1 class="row-name">Based on your recent listening</h1>
+                    <h6 class="row-subname">Inspired by your recent activity.</h6>
+                        <div class="album-container">
+                            <div class="album popular">
+                                <div class="img-container">
+                                    <img src="refactoring-img/future-nostalgia.jpg" alt="Future Nostalgia">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <h3>Future Nostalgia</h3>
+                                <h6>Dua Lipa</h6>
+                            </div>
+                        
+                            <div class="album popular">
+                                <div class="img-container">
+                                    <img src="refactoring-img/justice.jpg" alt="Justice">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <h3>Justice</h3>
+                                <h6>Justin Bieber</h6>
+                            </div>
+
+                            <div class="album popular">
+                                <div class="img-container">
+                                    <img src="refactoring-img/cortina.jpg" alt="Cortina">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <h3>Cortina</h3>
+                                <h6>Klaus</h6>
+                            </div>
+                        </div>
+
+                    <!-- Fourth row -->
+                    <h1 class="row-name">Podcasts</h1>
+                    <div class="album-container">
+                        <div class="album">
+                            <div class="img-container">
+                                <img src="refactoring-img/tilde-podcast.jpg" alt="Tilde Podcast">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                            <h3>Tilde</h3>
+                            <h6>Riccardo Palombo, Antonio Dini</h6>
+                        </div>
+
                         <div class="album">
                             <div class="img-container">
                                 <img src="refactoring-img/techisit-podcast.jpg" alt="Tech Is It Podcast">
@@ -147,119 +252,71 @@
                             <h6>Marketers - Dario Vignali</h6>
                         </div>
                     </div>
-                
 
-                <h1 class="row-name">Creato per Simone Di Meglio</h1>
-                    <h6 class="row-subname">Più ascolti, più accurati saranno i suggerimenti</h6>
-                    <div class="row">
-                        <div class="album">
-                            <div class="img-container">
-                                <img src="img/radar.jpeg" alt="Release Radar">
-                                <i class="far fa-play-circle"></i>
-                            </div>
-                            <h3>Release Radar</h3>
-                        </div>
-                        <div class="album">
-                            <div class="img-container">
-                                <img src="img/mixdaily.jpeg" alt="My daily mix 1">
-                                <i class="far fa-play-circle"></i>    
-                            </div>
-                            <h3>Daily Mix 1</h3>
-                        </div>
-                    </div>
+                </div>
 
-                <h1 class="row-name">Ascolti più popolari</h1>
-                <h6 class="row-subname">Più ascolti, più accurati saranno i suggerimenti</h6>
-                <div class="row">
-                    <div class="album popular">
-                        <div class="img-container">
-                            <img src="refactoring-img/justice.jpg" alt="Justice">
-                            <i class="far fa-play-circle"></i> 
-                        </div>
-                        
-                        <h3>Justice</h3>
-                        <h6>Justin Bieber</h6>
+            </main>
+
+            <footer>
+
+                <!-- LEFT SIDE (Album cover, name and artist)-->
+                <div class="player-album-container">
+                    <div class="player-album-cover">
+                        <img src="refactoring-img/starboy.jpg" alt="Starboy">
                     </div>
-                    <div class="album popular">
-                        <div class="img-container">
-                            <img src="refactoring-img/future-nostalgia.jpg" alt="Future Nostalgia">
-                            <i class="far fa-play-circle"></i>    
-                        </div>
-                        <h3>Future Nostalgia</h3>
-                        <h6>Dua Lipa</h6>
+                    <div class="player-album-title">
+                        <h2>Starboy</h2>
+                        <div class="song-name">The Weeknd, Daft Punk</div>
+                    </div>
+                    <div class="player-album-icons">
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-folder"></i>
                     </div>
                 </div>
 
-        </main>
-
-        <footer>
-
-
-        
-
-            <!-- LEFT SIDE -->
-            <div class="player-album">
-                <div class="player-album-cover">
-                    <img src="refactoring-img/theessential-podcast.jpg" alt="Tilde Podcast">
-                </div> 
-                        
-                <div class="player-album-title">
-                    <h2>The Essential</h2>
-                    <div class="song-name">Will Media - Mia Ceran</div>
-                </div> 
-
-                <div class="player-album-icons">
-                    <i class="far fa-heart"></i>
-                    <i class="far fa-folder"></i>
-                </div> 
-            </div>
-
-
-            <!-- CENTER -->
-            <div class="player-controller">
-
-                <div class="controller-container">
-                    <div><i class="fas fa-random"></i></div>
-                    <div><i class="fas fa-step-backward"></i></div>
-                    <div><i class="far fa-play-circle" id="big-button"></i></div>
-                    <div><i class="fas fa-step-forward"></i></div>
-                    <div><i class="fas fa-redo"></i></div>
-                </div>
-
-                <div class="time-bar-container">
-                    <div class="time-counter">1:25</div>
-                    <div class="unplayed">
-                        <div class="played">
-                            <div class="dot-container">
-                                <i class="fas fa-circle dot" id="time-dot"></i>
-                            </div>
-                        </div>
-                        
+                <!-- CENTER SECTION (Player command bar)-->
+                <div class="player-controller">
+                    <div class="controller-container">
+                        <div><i class="fas fa-random"></i></div>
+                        <div><i class="fas fa-step-backward"></i></div>
+                        <div><i class="far fa-play-circle" id="big-button"></i></div>
+                        <div><i class="fas fa-step-forward"></i></div>
+                        <div><i class="fas fa-redo"></i></div>
                     </div>
-                    <div class="time-counter">4:35</div>
-                </div>
-
-            </div>
-
-
-            <!-- RIGHT SIDE -->
-            <div class="player-audio">
-
-                    <div><a href=""><i class="fas fa-list-ul"></i></div>
-                    <div><a href=""><i class="fas fa-desktop"></i></div>
-                    <div><a href=""><i class="fas fa-volume-up"></i></div>
-                    <div class="volume-rocker-container">
-                        <div class="volume-rocker">
-                            <div class="volume-rocker-used">
+                    <div class="time-bar-container">
+                        <div class="time-counter">0:53</div>
+                        <div class="unplayed">
+                            <div class="played">
                                 <div class="dot-container">
-                                    <i class="fas fa-circle dot" id="volume-dot"></i>
+                                    <i class="fas fa-circle dot" id="time-dot"></i>
                                 </div>
                             </div>
                         </div>
+                        <div class="time-counter">3:50</div>
                     </div>
-            </div>
 
-        </footer>
+                </div>
 
+                <!-- RIGHT SIDE (Audio command bar) -->
+                <div class="player-audio-container">
+                    <div class="player-audio">
+                        <div class="player-audio-item"><i class="fas fa-list-ul"></i></div>
+                        <div class="player-audio-item"><i class="fas fa-desktop"></i></div>
+                        <div class="player-audio-item"><i class="fas fa-volume-up"></i></div>
+                        <div class="volume-rocker-container">
+                            <div class="volume-rocker">
+                                <div class="volume-rocker-used">
+                                    <div class="dot-container">
+                                        <i class="fas fa-circle dot" id="volume-dot"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+  
+            </footer>
+
+        </div>
     </body>
 </html>

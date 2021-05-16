@@ -1,9 +1,6 @@
+/* GLOBAL STYLE*/
 body {
     font-family: 'Roboto', sans-serif;
-}
-
-.app {
-    max-height: 100vh;
 }
 
 a {
@@ -14,14 +11,22 @@ a {
 h1 {
     color: white;
 }
+
+hr {
+    display: none;
+}
+
 /* MAIN */
+.app {
+    max-height: 100vh;
+}
+
 .app main {
     height: calc(100vh - 80px);
 }
 
-
 /* LEFT SIDEBAR */
-main .sidebar {
+.sidebar {
     background-color: rgba(0,0,0,255);
     height: 100%;
     display: flex;
@@ -30,19 +35,8 @@ main .sidebar {
     justify-content: space-between;
 }
 
-#spotify-logo {
+.sidebar a {
     display: none;
-    margin-bottom: 30px;
-}
-
-#spotify-logo-small {
-    margin-bottom: 30px;
-}
-
-.sidebar-nav {
-    display: flex;
-    flex-direction: column;
-    height: calc(100vh - 80px);
 }
 
 .sidebar ul {
@@ -50,7 +44,6 @@ main .sidebar {
     color: gray;
     padding: 12px;
 }
-
 
 .sidebar li {
     margin: 15px 0;
@@ -65,45 +58,10 @@ main .sidebar {
     color: white;
 }
 
-.playlist-sidebar {
-    flex-grow: 1;
-    flex-shrink: 1;
-    overflow-y: auto;
-    min-height: 200px;
-}
-
-.new-playlist, .download-link, .user {
+.sidebar-nav {
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.new-playlist {
-    justify-content: flex-start;
-    display: none;
-}
-
-
-.new-playlist i {
-    font-size: 30px;
-}
-
-#playlist-creation {
-    margin-left: 5px;
-}
-
-.user i {
-    font-size: 20px;
-}
-
-.sidebar a {
-    display: none;
-}
-
-.sidebar-user-ul {
-    height: 160px;
-    display: flex;
-    align-items: flex-end;
+    flex-direction: column;
+    height: calc(100vh - 80px);
 }
 
 .nav-item {
@@ -116,8 +74,52 @@ main .sidebar {
     max-height: 24px;
 }
 
-hr {
+#spotify-logo {
     display: none;
+    margin-bottom: 30px;
+}
+
+#spotify-logo-small {
+    margin-bottom: 30px;
+}
+
+.playlist-sidebar {
+    flex-grow: 1;
+    flex-shrink: 1;
+    overflow-y: auto;
+    min-height: 200px;
+}
+
+.new-playlist, .download-link, .user {
+    display: flex;
+    align-items: center;
+}
+
+.new-playlist {
+    justify-content: flex-start;
+    display: none;
+}
+
+.new-playlist i {
+    font-size: 30px;
+}
+
+#playlist-creation {
+    margin-left: 5px;
+}
+
+.sidebar-bottom-section {
+    height: 160px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.download-link {
+    justify-content: center;
+}
+
+.user i {
+    font-size: 20px;
 }
 
 #profile {
@@ -126,43 +128,15 @@ hr {
     margin-left: 5px;
     display: none;
 }
-
-
 /* END LEFT SIDEBAR */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* CONTENT */
+/* MAIN CONTENT SECTION (Albums, Podcasts, Daily Mix, Release Radar etc.) */
 main .content {
     height: 100%;
     background-color: rgba(20,25,34,255);
     overflow-y: scroll;
     overflow-x: hidden;
 }
-
-.notable-line-container {
-    display: flex;
-    justify-content: center;
-}
-
-.notable {
-    color: greenyellow;
-    width: 40%;
-    text-align: center;
-    display: block;
-}
-
 
 /* Upgrade bar */
 .upgrade-bar {
@@ -191,34 +165,69 @@ main .content {
     font-size: 13px;
     color: white;
 }
-
 /* End upgrade bar */
+
+
+/* Upper navigation bar */
+.content nav ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    list-style: none;
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+
+.content nav ul li {
+    margin-right: 15px;
+}
+
+.content nav ul li:last-child {
+    margin-right: 0;
+}
 
 nav ul li a:hover {
     color: white;
 }
 
+.notable-line-container {
+    display: flex;
+    justify-content: center;
+}
+
+.notable {
+    color: greenyellow;
+    width: 40%;
+    text-align: center;
+    display: block;
+}
+/* End upper navigation bar */
+
+/* Albums container */
 .album-container {
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;    
 }
 
+.album-container:last-child{
+    margin-bottom: 30px;
+}
+
 .row-name {
-    margin: 30px 0 15px 30px;
+    margin: 30px 0 15px 15px;
 }
 
 .row-subname {
-    margin: 0 0 15px 30px
+    margin: 0 0 15px 15px
 }
-
 
 .album {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-left: 30px;
+    margin: 0 15px 0 15px;
     width: calc(100% / 2 - 30px);
 }
 
@@ -240,14 +249,11 @@ nav ul li a:hover {
     top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    
-
 }
 
 .hover-container {
     width: 100%;
     height: 100%;
-    background-color: black;
 }
 
 .img-container:hover i {
@@ -277,47 +283,10 @@ nav ul li a:hover {
     color: gray;
     margin-top: 5px;
 }
-
-
-
-
-
-/* Content nav */
-.content nav ul{
-    display: flex;
-    justify-content: center;
-    margin-top: 100px;
-    list-style: none;
-    flex-wrap: wrap;
-    font-size: 15px;
-}
-
-.content nav ul li {
-    margin-right: 15px;
-}
-
-.content nav ul li:last-child {
-    margin-right: 0;
-    
-}
-/* End content nav */
-
-
-
-
-
-/* END CONTENT */
+/* END MAIN CONTENT SECTION */
 /* END MAIN */
 
-
 /* FOOTER */
-
-
-
-
-
-
-
 .app footer {
     height: 80px;
     background-color: #282828;
@@ -330,7 +299,17 @@ nav ul li a:hover {
     z-index: 1001;
 }
 
-.player-album, .player-audio {
+footer i {
+    color: gray;
+    font-size: 15px;
+}
+
+footer i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.player-album-container, .player-audio-container {
     flex-basis: 230px;
     height: 100%;
 }
@@ -344,12 +323,11 @@ nav ul li a:hover {
     justify-content: center;
 }
 
-
-.player-album {
+.player-album-container {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0 10px;
+    padding-left: 10px;
 }
 
 .player-album-cover {
@@ -362,7 +340,7 @@ nav ul li a:hover {
 
 .player-album-title {
     width: 50%;
-    padding: 0 10px;
+    padding-left: 10px;
 }
 
 .player-album-title h2 {
@@ -383,12 +361,11 @@ nav ul li a:hover {
 }
 
 .player-album-icons {
-    width: 30%;
-    padding: 0 5px;
+    width: 20%;
 }
 
-.player-album-icons i {
-    padding-right: 9px;
+.player-album-icons i:first-child {
+    padding-right: 5px;
 }
 
 .player-controller .controller-container, .player-controller .time-bar-container {
@@ -401,28 +378,15 @@ nav ul li a:hover {
     padding: 0 5px;
 }
 
-.player-audio, .player-audio-command {
+.player-audio-container, .player-audio-command {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.player-audio div a {
-    padding: 0 3px;
-}
-
-footer i {
-    color: gray;
-    font-size: 15px;
-}
-
-footer i:hover {
-    color: white;
-    cursor: pointer;
-}
-
 .controller-container i {
     color: lightgray;
+    padding-bottom: 5px;
 }
 
 .time-counter {
@@ -469,6 +433,14 @@ footer i:hover {
     display: block;
 }
 
+.player-audio {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.player-audio-item {
+    padding-right: 10px;
+}
 
 .volume-rocker-container {
     width: 100%;
@@ -499,7 +471,7 @@ footer i:hover {
 
 .volume-rocker:hover #volume-dot {
     display: block;
-    padding-left: 5px; /* just to see the little light-bar under*/
+    padding-left: 5px;
 }
 
 #big-button {
@@ -509,7 +481,6 @@ footer i:hover {
 #big-button:hover {
     transform: scale(1.1);
 }
-
 /* END FOOTER */
 
 
@@ -537,6 +508,10 @@ footer i:hover {
 
     .download-link {
         justify-content: flex-start;
+    }
+
+    .download-link a {
+        margin-left: 5px;
     }
 
     .sidebar ul {
