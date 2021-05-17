@@ -196,9 +196,9 @@ nav ul li a:hover {
 }
 
 .notable {
-    color: greenyellow;
-    width: 40%;
-    text-align: center;
+    background-color: greenyellow;
+    width: 50%;
+    height: 1px;
     display: block;
 }
 /* End upper navigation bar */
@@ -495,7 +495,7 @@ footer i:hover {
 
     #spotify-logo {
         display: block;
-        max-height: 40px;
+        max-height: 30px;
     }
 
     .sidebar a {
@@ -541,6 +541,11 @@ footer i:hover {
 
     .album {
         width: calc(100% / 4 - 30px);
+    }
+
+    #spotify-logo {
+        display: block;
+        height: 30px;
     }
 }
 
